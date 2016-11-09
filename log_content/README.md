@@ -1,0 +1,1 @@
+This contains log content, with response body for examine purpose.
