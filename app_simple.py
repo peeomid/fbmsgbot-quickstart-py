@@ -10,7 +10,7 @@ import env
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET'])
+@app.route('/webhook', methods=['GET'])
 def verify():
     # Source: https://github.com/hartleybrody/fb-messenger-bot/blob/master/app.py
     if request.args.get("hub.mode") == "subscribe" and request.args.get("hub.challenge"):
@@ -21,7 +21,7 @@ def verify():
     return "Hello world", 200
 
 
-@app.route('/', methods=['POST'])
+@app.route('/webhook', methods=['POST'])
 def webhook():
 
     data = request.get_json()
@@ -30,8 +30,8 @@ def webhook():
     if data["object"] == "page":
 
         for entry in data["entry"]:
-            pageId = entry["id"]
-            timeOfEvent = entry["time"]
+            page_id = entry["id"]
+            time_of_event = entry["time"]
 
             for messaging_event in entry["messaging"]:
 
@@ -54,6 +54,10 @@ def webhook():
                 else:
                     log("Unknown event received: {event} ".format(event=messaging_event))
 
+    # // Assume all went well.
+    # //
+    # // You must send back a 200, within 20 seconds, to let us know you've 
+    # // successfully received the callback. Otherwise, the request will time out.                    
     return "ok", 200
 
 def receive_message(event):
@@ -64,7 +68,7 @@ def receive_message(event):
     time_converted = convert_timestame(time_of_message)
     message = event["message"]
 
-    log("Received message for user {sender_id} and page {recipient_id} at {time} with message:".format(sender_id=sender_id, recipient_id=recipient_id, time=time_converted))
+    log("Received message for user {sender_id} and page {recipient_id} at {time} with message:".format(sender_id=sender_id, recipient_id=recipient_id, time=time_of_message))
     log(message)
 
     message_id = message["mid"]
@@ -161,7 +165,7 @@ def receive_postback(event):
             sender=sender_id,
             recipient=recipient_id,
             payload=payload,
-            time=time_converted
+            time=time_of_postback
         ))
 
     send_text_message(sender_id, "Postback called")
