@@ -1,0 +1,322 @@
+{
+    u 'entry': [{
+        u 'messaging': [{
+            u 'timestamp': 1478686275492,
+            u 'message': {
+                u 'text': u 'hi',
+                u 'mid': u 'mid.1478686275492:cbdb675a00',
+                u 'seq': 189
+            },
+            u 'recipient': {
+                u 'id': u '1142018315849244'
+            },
+            u 'sender': {
+                u 'id': u '853440234784685'
+            }
+        }],
+        u 'id': u '1142018315849244',
+        u 'time': 1478686275564
+    }], u 'object': u 'page'
+}
+Received message
+for user 853440234784685 and page 1142018315849244 at 2016 - 11 - 09 10: 11: 15 with message: {
+    u 'text': u 'hi',
+    u 'mid': u 'mid.1478686275492:cbdb675a00',
+    u 'seq': 189
+}
+response: {
+    u 'recipient_id': u '853440234784685',
+    u 'message_id': u 'mid.1478686278749:d4fa6b0732'
+}
+Successfully sent generic message with id mid .1478686278749: d4fa6b0732 to recipient 853440234784685
+127.0 .0 .1 - -[09 / Nov / 2016 17: 11: 18]
+"POST / HTTP/1.1"
+200 - {
+    u 'entry': [{
+        u 'messaging': [{
+            u 'timestamp': 1478686278749,
+            u 'message': {
+                u 'text': u 'P: hi',
+                u 'is_echo': True,
+                u 'app_id': 860204204125995,
+                u 'seq': 190,
+                u 'mid': u 'mid.1478686278749:d4fa6b0732'
+            },
+            u 'recipient': {
+                u 'id': u '853440234784685'
+            },
+            u 'sender': {
+                u 'id': u '1142018315849244'
+            }
+        }],
+        u 'id': u '1142018315849244',
+        u 'time': 1478686279287
+    }],
+    u 'object': u 'page'
+}
+Received message
+for user 1142018315849244 and page 853440234784685 at 2016 - 11 - 09 10: 11: 18 with message: {
+    u 'text': u 'P: hi',
+    u 'is_echo': True,
+    u 'app_id': 860204204125995,
+    u 'seq': 190,
+    u 'mid': u 'mid.1478686278749:d4fa6b0732'
+}
+400 {
+    "error": {
+        "message": "(#100) No matching user found",
+        "type": "OAuthException",
+        "code": 100,
+        "error_subcode": 2018001,
+        "fbtrace_id": "B5\/0R4hDMkG"
+    }
+}
+127.0 .0 .1 - -[09 / Nov / 2016 17: 11: 20]
+"POST / HTTP/1.1"
+200 - {
+    u 'entry': [{
+        u 'messaging': [{
+            u 'delivery': {
+                u 'mids': [u 'mid.1478686278749:d4fa6b0732'],
+                u 'seq': 191,
+                u 'watermark': 1478686278749
+            },
+            u 'timestamp': 0,
+            u 'recipient': {
+                u 'id': u '1142018315849244'
+            },
+            u 'sender': {
+                u 'id': u '853440234784685'
+            }
+        }, {
+            u 'read': {
+                u 'seq': 192,
+                u 'watermark': 1478686278749
+            },
+            u 'timestamp': 1478686279464,
+            u 'recipient': {
+                u 'id': u '1142018315849244'
+            },
+            u 'sender': {
+                u 'id': u '853440234784685'
+            }
+        }],
+        u 'id': u '1142018315849244',
+        u 'time': 1478686281010
+    }],
+    u 'object': u 'page'
+}
+Unknown event received: {
+    u 'read': {
+        u 'seq': 192,
+        u 'watermark': 1478686278749
+    },
+    u 'timestamp': 1478686279464,
+    u 'recipient': {
+        u 'id': u '1142018315849244'
+    },
+    u 'sender': {
+        u 'id': u '853440234784685'
+    }
+}
+127.0 .0 .1 - -[09 / Nov / 2016 17: 11: 21]
+"POST / HTTP/1.1"
+200 - {
+    u 'entry': [{
+        u 'messaging': [{
+            u 'timestamp': 1478686284976,
+            u 'message': {
+                u 'text': u 'generic',
+                u 'mid': u 'mid.1478686284976:da8c011a70',
+                u 'seq': 193
+            },
+            u 'recipient': {
+                u 'id': u '1142018315849244'
+            },
+            u 'sender': {
+                u 'id': u '853440234784685'
+            }
+        }],
+        u 'id': u '1142018315849244',
+        u 'time': 1478686285031
+    }],
+    u 'object': u 'page'
+}
+Received message
+for user 853440234784685 and page 1142018315849244 at 2016 - 11 - 09 10: 11: 24 with message: {
+    u 'text': u 'generic',
+    u 'mid': u 'mid.1478686284976:da8c011a70',
+    u 'seq': 193
+}
+response: {
+    u 'recipient_id': u '853440234784685',
+    u 'message_id': u 'mid.1478686286499:d6df857f94'
+}
+Successfully sent generic message with id mid .1478686286499: d6df857f94 to recipient 853440234784685
+127.0 .0 .1 - -[09 / Nov / 2016 17: 11: 26]
+"POST / HTTP/1.1"
+200 - {
+    u 'entry': [{
+        u 'messaging': [{
+            u 'timestamp': 1478686286499,
+            u 'message': {
+                u 'attachments': [{
+                    u 'url': u 'https://www.facebook.com/l.php?u=https%3A%2F%2Fwww.oculus.com%2Fen-us%2Ftouch%2F&h=LAQHK1G1LAQFTnZAgNqcZAu5mEWZtMb0cw9_ICP8MsO7kMA&s=1&enc=AZPDQy7dmZY-wAJBbd2Pigu5gbvyS_Si_FiwbvuH6K6EjajVaHc02AvIBl91TXR3lRA4WVVm_80UvxLVzvvjbRpr_PFVMOS5apLW-tFeRMYwVQ',
+                    u 'type': u 'template',
+                    u 'payload': {
+                        u 'template_type': u 'generic',
+                        u 'elements': [{
+                            u 'buttons': [{
+                                u 'url': u 'https://www.oculus.com/en-us/touch/',
+                                u 'type': u 'web_url',
+                                u 'title': u 'Open Web URL'
+                            }, {
+                                u 'type': u 'postback',
+                                u 'payload': u 'Payload for second bubble',
+                                u 'title': u 'Call Postback'
+                            }],
+                            u 'subtitle': u 'Your Hands, Now in VR',
+                            u 'item_url': u 'https://www.oculus.com/en-us/touch/',
+                            u 'image_url': u 'http://messengerdemo.parseapp.com/img/touch.png',
+                            u 'title': u 'touch'
+                        }, {
+                            u 'buttons': [{
+                                u 'url': u 'https://www.oculus.com/en-us/rift/',
+                                u 'type': u 'web_url',
+                                u 'title': u 'Open Web URL'
+                            }, {
+                                u 'type': u 'postback',
+                                u 'payload': u 'Payload for first bubble',
+                                u 'title': u 'Call Postback'
+                            }],
+                            u 'subtitle': u 'Next-generation virtual reality',
+                            u 'item_url': u 'https://www.oculus.com/en-us/rift/',
+                            u 'image_url': u 'http://messengerdemo.parseapp.com/img/rift.png',
+                            u 'title': u 'rift'
+                        }],
+                        u 'sharable': False
+                    },
+                    u 'title': u 'touch, rift'
+                }],
+                u 'is_echo': True,
+                u 'app_id': 860204204125995,
+                u 'seq': 194,
+                u 'mid': u 'mid.1478686286499:d6df857f94'
+            },
+            u 'recipient': {
+                u 'id': u '853440234784685'
+            },
+            u 'sender': {
+                u 'id': u '1142018315849244'
+            }
+        }, {
+            u 'delivery': {
+                u 'mids': [u 'mid.1478686286499:d6df857f94'],
+                u 'seq': 195,
+                u 'watermark': 1478686286499
+            },
+            u 'timestamp': 0,
+            u 'recipient': {
+                u 'id': u '1142018315849244'
+            },
+            u 'sender': {
+                u 'id': u '853440234784685'
+            }
+        }],
+        u 'id': u '1142018315849244',
+        u 'time': 1478686287375
+    }],
+    u 'object': u 'page'
+}
+Received message
+for user 1142018315849244 and page 853440234784685 at 2016 - 11 - 09 10: 11: 26 with message: {
+    u 'attachments': [{
+        u 'url': u 'https://www.facebook.com/l.php?u=https%3A%2F%2Fwww.oculus.com%2Fen-us%2Ftouch%2F&h=LAQHK1G1LAQFTnZAgNqcZAu5mEWZtMb0cw9_ICP8MsO7kMA&s=1&enc=AZPDQy7dmZY-wAJBbd2Pigu5gbvyS_Si_FiwbvuH6K6EjajVaHc02AvIBl91TXR3lRA4WVVm_80UvxLVzvvjbRpr_PFVMOS5apLW-tFeRMYwVQ',
+        u 'type': u 'template',
+        u 'payload': {
+            u 'template_type': u 'generic',
+            u 'elements': [{
+                u 'buttons': [{
+                    u 'url': u 'https://www.oculus.com/en-us/touch/',
+                    u 'type': u 'web_url',
+                    u 'title': u 'Open Web URL'
+                }, {
+                    u 'type': u 'postback',
+                    u 'payload': u 'Payload for second bubble',
+                    u 'title': u 'Call Postback'
+                }],
+                u 'subtitle': u 'Your Hands, Now in VR',
+                u 'item_url': u 'https://www.oculus.com/en-us/touch/',
+                u 'image_url': u 'http://messengerdemo.parseapp.com/img/touch.png',
+                u 'title': u 'touch'
+            }, {
+                u 'buttons': [{
+                    u 'url': u 'https://www.oculus.com/en-us/rift/',
+                    u 'type': u 'web_url',
+                    u 'title': u 'Open Web URL'
+                }, {
+                    u 'type': u 'postback',
+                    u 'payload': u 'Payload for first bubble',
+                    u 'title': u 'Call Postback'
+                }],
+                u 'subtitle': u 'Next-generation virtual reality',
+                u 'item_url': u 'https://www.oculus.com/en-us/rift/',
+                u 'image_url': u 'http://messengerdemo.parseapp.com/img/rift.png',
+                u 'title': u 'rift'
+            }],
+            u 'sharable': False
+        },
+        u 'title': u 'touch, rift'
+    }],
+    u 'is_echo': True,
+    u 'app_id': 860204204125995,
+    u 'seq': 194,
+    u 'mid': u 'mid.1478686286499:d6df857f94'
+}
+400 {
+    "error": {
+        "message": "(#100) No matching user found",
+        "type": "OAuthException",
+        "code": 100,
+        "error_subcode": 2018001,
+        "fbtrace_id": "C86ZLB87kxr"
+    }
+}
+127.0 .0 .1 - -[09 / Nov / 2016 17: 11: 30]
+"POST / HTTP/1.1"
+200 - {
+    u 'entry': [{
+        u 'messaging': [{
+            u 'read': {
+                u 'seq': 196,
+                u 'watermark': 1478686286499
+            },
+            u 'timestamp': 1478686287518,
+            u 'recipient': {
+                u 'id': u '1142018315849244'
+            },
+            u 'sender': {
+                u 'id': u '853440234784685'
+            }
+        }],
+        u 'id': u '1142018315849244',
+        u 'time': 1478686290412
+    }],
+    u 'object': u 'page'
+}
+Unknown event received: {
+    u 'read': {
+        u 'seq': 196,
+        u 'watermark': 1478686286499
+    },
+    u 'timestamp': 1478686287518,
+    u 'recipient': {
+        u 'id': u '1142018315849244'
+    },
+    u 'sender': {
+        u 'id': u '853440234784685'
+    }
+}
+127.0 .0 .1 - -[09 / Nov / 2016 17: 11: 31]
+"POST / HTTP/1.1"
+200 -

@@ -1,0 +1,124 @@
+{
+    u 'entry': [{
+        u 'messaging': [{
+            u 'timestamp': 1478685352032,
+            u 'message': {
+                u 'text': u 'hi',
+                u 'mid': u 'mid.1478685352032:b7dad04632',
+                u 'seq': 160
+            },
+            u 'recipient': {
+                u 'id': u '1142018315849244'
+            },
+            u 'sender': {
+                u 'id': u '853440234784685'
+            }
+        }],
+        u 'id': u '1142018315849244',
+        u 'time': 1478685352089
+    }], u 'object': u 'page'
+}
+Received message
+for user 853440234784685 and page 1142018315849244 at 2016 - 11 - 09 09: 55: 52 with message: {
+    u 'text': u 'hi',
+    u 'mid': u 'mid.1478685352032:b7dad04632',
+    u 'seq': 160
+}
+response: {
+    u 'recipient_id': u '853440234784685',
+    u 'message_id': u 'mid.1478685353713:381ab48b80'
+}
+Successfully sent generic message with id mid .1478685353713: 381 ab48b80 to recipient 853440234784685
+127.0 .0 .1 - -[09 / Nov / 2016 16: 55: 54]
+"POST / HTTP/1.1"
+200 - {
+    u 'entry': [{
+        u 'messaging': [{
+            u 'timestamp': 1478685353713,
+            u 'message': {
+                u 'text': u 'P: hi',
+                u 'is_echo': True,
+                u 'app_id': 860204204125995,
+                u 'seq': 161,
+                u 'mid': u 'mid.1478685353713:381ab48b80'
+            },
+            u 'recipient': {
+                u 'id': u '853440234784685'
+            },
+            u 'sender': {
+                u 'id': u '1142018315849244'
+            }
+        }, {
+            u 'delivery': {
+                u 'mids': [u 'mid.1478685353713:381ab48b80'],
+                u 'seq': 162,
+                u 'watermark': 1478685353713
+            },
+            u 'timestamp': 0,
+            u 'recipient': {
+                u 'id': u '1142018315849244'
+            },
+            u 'sender': {
+                u 'id': u '853440234784685'
+            }
+        }],
+        u 'id': u '1142018315849244',
+        u 'time': 1478685354433
+    }],
+    u 'object': u 'page'
+}
+Received message
+for user 1142018315849244 and page 853440234784685 at 2016 - 11 - 09 09: 55: 53 with message: {
+    u 'text': u 'P: hi',
+    u 'is_echo': True,
+    u 'app_id': 860204204125995,
+    u 'seq': 161,
+    u 'mid': u 'mid.1478685353713:381ab48b80'
+}
+400 {
+    "error": {
+        "message": "(#100) No matching user found",
+        "type": "OAuthException",
+        "code": 100,
+        "error_subcode": 2018001,
+        "fbtrace_id": "FA1hSkN4odG"
+    }
+}
+127.0 .0 .1 - -[09 / Nov / 2016 16: 55: 58]
+"POST / HTTP/1.1"
+200 - {
+    u 'entry': [{
+        u 'messaging': [{
+            u 'read': {
+                u 'seq': 163,
+                u 'watermark': 1478685353713
+            },
+            u 'timestamp': 1478685354477,
+            u 'recipient': {
+                u 'id': u '1142018315849244'
+            },
+            u 'sender': {
+                u 'id': u '853440234784685'
+            }
+        }],
+        u 'id': u '1142018315849244',
+        u 'time': 1478685358622
+    }],
+    u 'object': u 'page'
+}
+Unknown event received: {
+    u 'read': {
+        u 'seq': 163,
+        u 'watermark': 1478685353713
+    },
+    u 'timestamp': 1478685354477,
+    u 'recipient': {
+        u 'id': u '1142018315849244'
+    },
+    u 'sender': {
+        u 'id': u '853440234784685'
+    }
+}
+127.0 .0 .1 - -[09 / Nov / 2016 16: 55: 58]
+"POST / HTTP/1.1"
+200 -
